@@ -11,7 +11,7 @@ Ytest  = Test (:, end);
 
 %% Set parameters & results containers
 % Set iterations
-n = 1:30
+n = 1:30;
 % Set regularization
 lambda = 500
 
@@ -63,7 +63,7 @@ for i = 1:length(n)
 end
 % TrainAccuracy %View TrainAccuracy
 % TestAccuracy %View TestAccuracy
-
+figure
 plot(n, [TestAccuracy_L0; TestAccuracy_L1; TestAccuracy_L2])
 title({'Figure 3. Change of Prediction Accuracy', ...
        'Step Size = 0.001', ...
